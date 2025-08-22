@@ -1,0 +1,41 @@
+:root {
+  /* colors */
+  --color1: #caff42;
+  --color2: #ebf7f8;
+  --color3: #d0e0eb;
+  --color4: #88abc2;
+  --color5: #49708a;
+}
+
+
+/* navbar css */
+.navbar {
+  /* spacing */
+  max-width: 100vw;
+  padding: 1em;
+  /* decorates */
+  background-color: var(--color4);
+  /* display */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar > h1 {
+  cursor: pointer;
+}
+
+.navbar-link {
+  display: flex;
+  flex-flow: column;
+}
+
+
+/* navbar icons */
+.bi-list {
+  font-size: 2em;
+  transition: all .3s ease;
+}
+.bi-list:hover {
+  transform: scale(1.2);
+}
