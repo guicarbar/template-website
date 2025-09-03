@@ -21,9 +21,6 @@ footer {
 
 }
 /* general css */
-.table-title {
-  display: none;
-}
 
 
 /* infos */ 
@@ -40,18 +37,40 @@ footer {
 }
 
 
-/* Links */
-tr.table-itens > th {
-  margin: 1em;
+/* Links and contacts */
+.footer-details_links, .footer-details_contacts { 
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1em;
 }
-tr.table-itens > th > a {
-  text-transform: uppercase;
-  text-decoration: none;
+
+.footer-details_links > p, .footer-details_contacts > p {
+  width: 100%;
+}
+
+.footer-details_links > a, .footer-details_contacts > a {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  gap: .8em;
   color: var(--colorBlack);
+  text-decoration: none;
+  transition: all ease .3s;
 }
+
+.footer-details_links > a:hover, .footer-details_contacts > a:hover { transform: scale(1.1); }
+.footer-details_links > a:active, .footer-details_contacts > a:active { transform: scale(.9); }
 
 
 /* directs */
 .footer-directs {
+  padding: 1.8em 1em 1.6em;
+  text-align: center;
+}
 
+.footer-directs > a {
+  color: var(--colorBlack);
+  text-decoration: none;
 }
