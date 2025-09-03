@@ -5,4 +5,53 @@
   --color3: #d0e0eb;
   --color4: #88abc2;
   --color5: #49708a;
+  --colorBlack: #00030c;
+  --colorWhite: #ffffff;
+}
+
+/* footer - css */
+footer {
+  /* decorate */
+  background-color: var(--color4);
+}
+
+
+/* footer details css */
+.footer-details {
+
+}
+/* general css */
+.table-title {
+  display: none;
+}
+
+
+/* infos */ 
+.footer-details_infos {
+  text-align: center;
+  padding: 1em;
+}
+.footer-details_infos > a > img {
+  width: 4em;
+  height: 4em;
+}
+.footer-details_infos > p {
+  font-size: .8em;
+}
+
+
+/* Links */
+tr.table-itens > th {
+  margin: 1em;
+}
+tr.table-itens > th > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--colorBlack);
+}
+
+
+/* directs */
+.footer-directs {
+
 }

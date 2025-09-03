@@ -7,6 +7,7 @@
 
   <!-- css components -->
   <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" href="style/img/TemplateIcon.ico" type="image/x-icon">
 
   <!-- title -->
   <title>Template Website</title>
@@ -17,23 +18,104 @@
     <!-- main item -->
     <div class="navbar-main">
       <!-- header or navbar title -->
-      <h1 class="sansation-bold" onclick="redirect(1)">Template</h1>
+      <a href="index.html" class="sansation-bold">Template</a>
       <!-- menu icons -->
-      <i class="bi bi-list" onclick="menu()"></i>
+      <i class="bi bi-list" onclick="menu()" id="navbarBtn"></i>
     </div>
+
     <!-- menu links -->
-    <div class="navbar-link" id="navbarList">
+    <div class="navbar-link hidden" id="navbarList">
       <ul>
-        <li><a class="sansation-regular" href="">Home</a></li>
-        <li><a class="sansation-regular" href="">Blog</a></li>
-        <li><a class="sansation-regular" href="">Contato</a></li>
-        <li><a class="sansation-regular" href="">Login</a></li>
+        <li><a class="sansation-bold" href="">Home</a></li>
+        <li><a class="sansation-bold" href="">Blog</a></li>
+        <li><a class="sansation-bold" href="">Contato</a></li>
+        <li><a class="sansation-bold" href="">Login</a></li>
       </ul>
     </div>
   </header>
   <!-- main -->
+  <main></main>
   <!-- footer -->
-  <footer></footer>
+  <footer>
+    <!-- coluns areas -->
+    <div class="footer-details">
+      <!-- infos -->
+      <div class="footer-details_infos">
+        <a href="index.html"><img src="style/img/TemplateIcon.png" alt="template icone"></a>
+        <p class="sansation-regular">Este site é um projeto criado para servir como template, oferecendo uma estrutura pronta e ideal para pequenos ajustes de acordo com sua preferência.</p>
+      </div>
+      <!-- others links -->
+      <div class="footer-details_links">
+        <table>
+          <!-- table title -->
+          <tr class="table-title">
+            <th>Others</th>
+          </tr>
+          <!-- links -->
+          <tr class="table-itens">
+            <th><i class="bi bi-bookmark"></i></th>
+            <th><a href="">Link 1</a></th>
+          </tr>
+          <!-- links -->
+          <tr class="table-itens">
+            <th><i class="bi bi-bookmark"></i></th>
+            <th><a href="">Link 2</a></th>
+          </tr>
+          <!-- links -->
+          <tr class="table-itens">
+            <th><i class="bi bi-bookmark"></i></th>
+            <th><a href="">Link 3</a></th>
+          </tr>
+          <!-- links -->
+          <tr class="table-itens">
+            <th><i class="bi bi-bookmark"></i></th>
+            <th><a href="">Link 4</a></th>
+          </tr>
+          <!-- links -->
+          <tr class="table-itens">
+            <th><i class="bi bi-bookmark"></i></th>
+            <th><a href="">Link 5</a></th>
+          </tr>
+          <!-- links -->
+          <tr class="table-itens">
+            <th><i class="bi bi-bookmark"></i></th>
+            <th><a href="">Link 6</a></th>
+          </tr>
+          <!-- links -->
+          <tr class="table-itens">
+            <th><i class="bi bi-bookmark"></i></th>
+            <th><a href="">Link 7</a></th>
+          </tr>
+          <!-- links -->
+          <tr class="table-itens">
+            <th><i class="bi bi-bookmark"></i></th>
+            <th><a href="">Link 8</a></th>
+          </tr>
+        </table>
+      </div>
+      <!-- fasts contacts -->
+      <div class="footer-details_contacts">
+        <table>
+          <!-- table title -->
+          <tr class="table-title">
+            <th>Contacts</th>
+          </tr>
+          <!-- links -->
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+          <!-- links -->
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- direitos reservados -->
+    <div class="footer-directs">© 2025 <a href="">Guilherme</a>. Todos os direitos reservados.</div>
+  </footer>
   <!-- js link -->
   <script src="javascript/comuns.js"></script>
   <script src="javascript/navbar.js"></script>

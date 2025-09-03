@@ -1,76 +1,36 @@
-:root {
-  /* colors */
-  --color1: #caff42;
-  --color2: #ebf7f8;
-  --color3: #d0e0eb;
-  --color4: #88abc2;
-  --color5: #49708a;
-  --colorBlack: #00030c;
-  --colorWhite: #ffffff;
+/* navbar - css */
+.navbar {
+  position: relative;
+  z-index: 0;
 }
 
-
 /* navbar css */
-.navbar {
+.navbar-main {
   /* spacing */
   max-width: 100vw;
   padding: 1em;
-  /* decorates */
-  background-color: var(--color4);
-  /* display */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-main {
-  /* spacing */
-  width: 100%;
-  z-index: 10;
-  /* display */
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar-main > h1 {
-  cursor: pointer;
-}
-
-
-/* navbar link menu */
-.navbar-link.active {
-  animation: showMenuMobile 3s ease forwards;
-}
-
-.navbar-link > ul {
-  /* spacing */
-  width: 100vw;
-  padding: 1.6em 0em;
   /* decorate */
   background-color: var(--color4);
-  /* position */
-  position: fixed;
-  left: 0px;
-  top: -100%;
   /* display */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
 }
 
-.navbar-link > ul > li > a {
+.navbar-main > a {
+  font-size: 2em;
   text-decoration: none;
   color: var(--colorBlack);
-  cursor: pointer;
 }
 
-/* buttons menu */
-.navbar-link > ul > li { transition: all .3s ease; }
-.navbar-link > ul > li:hover { transform: scale(1.1); }
-.navbar-link > ul > li:active { transform: scale(.9); }
 
+
+/* buttons menu */
+/* navbar link menu */
 
 /* navbar icons */
-.bi-list {
+.bi-list, .bi-x-lg {
   font-size: 2em;
   transition: all .3s ease;
   cursor: pointer;
@@ -78,14 +38,60 @@
 .bi-list:hover { transform: scale(1.2); }
 .bi-list:active { transform: scale(1.1); }
 
+/* hidden menu */
+.hidden { display: none; }
+/* show menu */
+.show { animation: showMenu .3s ease-out forwards; }
+/* close menu */
+.closeMenu { animation: hiddenMenu .3s ease-out forwards; }
 
-/* animations */
-/* showMenu links - mobile */
-@keyframes showMenuMobile {
-  0% {
-    top: -100%;
+.navbar-link {
+  /* display */
+  position: relative;
+  z-index: 5;
+  /* spacing */
+  max-width: 100vw;
+  /* decorate */
+  background-color: var(--color4);
+}
+
+.navbar-link > ul {
+  height: 3.6em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-link > ul > li > a {
+  color: var(--colorBlack);
+  text-decoration: none;
+}
+
+.navbar-link > ul > li { transition: .3s ease; }
+.navbar-link > ul > li:hover { transform: scale(1.2); }
+.navbar-link > ul > li:active { transform: scale(.9); }
+
+
+
+/* buttons menu  - animation */
+/* show */
+@keyframes showMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
   }
-  100% {
-    top: 4em;
+  to {
+    opacity: 1;
+    transform: translateY(-1px)
+  }
+}
+/* close */
+@keyframes hiddenMenu {
+  from {
+    opacity: 1;
+    transform: translateY(-1px)
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
   }
 }

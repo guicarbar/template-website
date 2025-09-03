@@ -42,7 +42,15 @@
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
 /* titles */
 h1 {
   font-size: 2em;
+}
+
+main {
+  height: 50vh;
 }
