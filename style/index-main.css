@@ -1,0 +1,43 @@
+/* root - vars */
+:root {
+  /* colors */
+  --color1: #caff42;
+  --color2: #ebf7f8;
+  --color3: #d0e0eb;
+  --color4: #88abc2;
+  --color5: #49708a;
+  --colorBlack: #00030c;
+  --colorWhite: #ffffff;
+}
+
+
+/* index page */
+main {
+  width: 100vw;
+  margin: 1em 0em;
+}
+
+
+/* btn for carroussel */
+.carroussel-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.carroussel-btn > button {
+  border: none;
+  background-color: transparent;
+  cursor: auto;
+  transition: all .3s ease;
+}
+
+.carroussel-btn > button:hover { transform: scale(1.1); }
+.carroussel-btn > button:active { transform: scale(.9); }
+
+.carroussel-btn > button > i {
+  color: var(--colorWhite);
+  font-size: 3em;
+  transition: all .3s ease;
+  cursor: pointer;
+}

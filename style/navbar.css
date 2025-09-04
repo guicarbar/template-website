@@ -48,10 +48,10 @@
 
 .navbar-link {
   /* display */
-  position: relative;
+  position: absolute;
   z-index: 5;
   /* spacing */
-  max-width: 100vw;
+  min-width: 100vw;
   /* decorate */
   background-color: var(--color4);
 }

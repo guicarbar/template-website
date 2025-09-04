@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- css components -->
-  <link rel="stylesheet" href="style/style.css">
   <link rel="shortcut icon" href="style/img/TemplateIcon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/index-main.css">
 
   <!-- title -->
   <title>Template Website</title>
@@ -34,7 +35,23 @@
     </div>
   </header>
   <!-- main -->
-  <main></main>
+  <main>
+    <!-- carroussel - main -->
+    <div class="carroussel">
+      <!-- screen -->
+      <div class="carroussel-screen" id="caroussel">
+        <img src="https://placehold.co/600x400/blue/white?font=montserrat&text=Placehold+image" alt="Placehold image">
+        <img src="https://placehold.co/600x400/orange/white?font=montserrat&text=Placehold+image" alt="Placehold image">
+        <img src="https://placehold.co/600x400/red/white?font=montserrat&text=Placehold+image" alt="Placehold image">
+      </div>
+      <!-- buttons -->
+      <div class="carroussel-btn">
+        <button><i class="bi bi-arrow-left-circle-fill"></i></button>
+        <button><i class="bi bi-arrow-right-circle-fill"></i></button>
+      </div>
+    </div>
+    <!--  -->
+  </main>
   <!-- footer -->
   <footer>
     <!-- coluns areas -->
@@ -53,14 +70,12 @@
         <a href=""><i class="bi bi-bookmark"></i><p>Link 4</p></a>
         <a href=""><i class="bi bi-bookmark"></i><p>Link 5</p></a>
         <a href=""><i class="bi bi-bookmark"></i><p>Link 6</p></a>
-        <a href=""><i class="bi bi-bookmark"></i><p>Link 7</p></a>
-        <a href=""><i class="bi bi-bookmark"></i><p>Link 8</p></a>
       </div>
       <!-- fasts contacts -->
       <div class="footer-details_contacts">
         <p>Contacts</p>
-        <a href=""><i class="bi bi-github"></i><p>GitHub</p></a>
-        <a href=""><i class="bi bi-linkedin"></i><p>Linkedin</p></a>
+        <a href="https://github.com/guicarbar"><i class="bi bi-github"></i><p>GitHub</p></a>
+        <a href="www.linkedin.com/in/guilherme-desenvolvedor-fullstack"><i class="bi bi-linkedin"></i><p>Linkedin</p></a>
         <a href=""><i class="bi bi-file-person"></i><p>Pesonal</p></a>
         </ul>
       </div>
@@ -69,7 +84,7 @@
     <div class="footer-directs">© 2025 <a href="">Guilherme</a>. Todos os direitos reservados.</div>
   </footer>
   <!-- js link -->
-  <script src="javascript/comuns.js"></script>
+  <script src="javascript/caroussel.js"></script>
   <script src="javascript/navbar.js"></script>
 </body>
 </html>
