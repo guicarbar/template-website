@@ -13,23 +13,35 @@
 
 /* index page */
 main {
+  height: 100vh;
   width: 100vw;
   margin: 1em 0em;
 }
 
 
+/* carroussel */
+/* general itens */
+.carroussel {
+  position: relative;
+}
+
 /* btn for carroussel */
 .carroussel-btn {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+
   display: flex;
   justify-content: space-between;
   padding: 0 1em;
 }
 
 .carroussel-btn > button {
-  border: none;
   background-color: transparent;
   cursor: auto;
   transition: all .3s ease;
+  border: none;
 }
 
 .carroussel-btn > button:hover { transform: scale(1.1); }
@@ -37,7 +49,22 @@ main {
 
 .carroussel-btn > button > i {
   color: var(--colorWhite);
-  font-size: 3em;
+  font-size: 2.6em;
   transition: all .3s ease;
   cursor: pointer;
+}
+
+
+
+/* screen - carroussel */
+.carroussel-screen {
+  text-align: center;
+}
+
+.carroussel-screen > img {
+  max-width: 100vw;
+}
+
+.screen-disable {
+  display: none;
 }
