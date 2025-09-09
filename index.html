@@ -37,17 +37,17 @@
   <!-- main -->
   <main>
     <!-- carroussel - main -->
-    <div class="carroussel">
+    <div class="carrousel">
       <!-- screen -->
-      <div class="carroussel-screen" id="caroussel">
-        <img class="screen-active" src="https://placehold.co/600x400/blue/white?font=montserrat&text=Placehold+image" alt="Placehold image">
-        <img class="screen-disable" src="https://placehold.co/600x400/orange/white?font=montserrat&text=Placehold+image" alt="Placehold image">
-        <img class="screen-disable" src="https://placehold.co/600x400/red/white?font=montserrat&text=Placehold+image" alt="Placehold image">
+      <div class="carrousel-screen" id="caroussel">
+        <img src="https://placehold.co/600x400/88abc2/black?font=montserrat&text=Placehold+image" alt="Placehold image">
+        <img src="https://placehold.co/600x400/49708a/black?font=montserrat&text=Placehold+image" alt="Placehold image">
+        <img src="https://placehold.co/600x400/caff42/black?font=montserrat&text=Placehold+image" alt="Placehold image">
       </div>
       <!-- buttons -->
-      <div class="carroussel-btn">
-        <button><i class="bi bi-arrow-left-circle-fill"></i></button>
-        <button><i class="bi bi-arrow-right-circle-fill"></i></button>
+      <div class="carrousel-btn">
+        <button onclick="backwardCaroussel()"><i class="bi bi-arrow-left-circle-fill"></i></button>
+        <button onclick="forwardCaroussel()"><i class="bi bi-arrow-right-circle-fill"></i></button>
       </div>
     </div>
     <!--  -->
@@ -86,5 +86,6 @@
   <!-- js link -->
   <script src="javascript/caroussel.js"></script>
   <script src="javascript/navbar.js"></script>
+  <script src="javascript/utilies.js"></script>
 </body>
 </html>

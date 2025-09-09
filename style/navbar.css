@@ -54,6 +54,7 @@
   min-width: 100vw;
   /* decorate */
   background-color: var(--color4);
+  box-shadow: 0px 0px 10px var(--color1);
 }
 
 .navbar-link > ul {
