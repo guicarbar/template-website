@@ -127,19 +127,152 @@
     <div class="partener">
       <h2>Empresas parceiras!</h2>
       <div class="partener-circle">
-        <i class="bi bi-globe"></i>
-        <i class="bi bi-globe"></i>
-        <i class="bi bi-globe"></i>
-        <i class="bi bi-globe"></i>
-        <i class="bi bi-globe"></i>
-        <i class="bi bi-globe"></i>
+        <div class="icons">
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+          <!-- Duplicados para efeito de loop -->
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+          <i class="bi bi-globe"></i>
+        </div>
       </div>
+      <p>
+        Essas sào as empresas que apoiam nosso projeto!
+      </p>
     </div>
     <!-- user comentes -->
-    <div>
-
+    <div class="comentsUser">
+      <h2>Algum dos comentarios de nossos usuários!</h2>
+      <div class="comentsUser_carBox">
+        <!-- comentario & -->
+        <div class="comentsUser_card">
+          <!-- text -->
+          <p>
+            “Adorei o design do site, bem limpo e fácil de navegar. Essa área de comentários deixa tudo mais interativo!”
+          </p>
+          <!-- name -->
+          <h3>
+            Ana Souza
+            <i class="bi bi-person"></i>
+          </h3>
+        </div>
+        <!-- comentario & -->
+        <div class="comentsUser_card">
+          <!-- text -->
+          <p>
+            “Gostei bastante do template, principalmente a forma como o layout se adapta no celular. Ficou bem responsivo mesmo.”
+          </p>
+          <!-- name -->
+          <h3>
+            Ricardo Lima
+            <i class="bi bi-person"></i>
+          </h3>
+        </div>
+        <!-- comentario & -->
+        <div class="comentsUser_card">
+          <!-- text -->
+          <p>
+            “Simplesmente incrível! É o tipo de modelo que eu usaria para apresentar meu portfólio de fotografia. Os ícones e o carrossel de parceiros ficaram muito elegantes.”
+          </p>
+          <!-- name -->
+          <h3>
+            Mariana Duarte
+            <i class="bi bi-person"></i>
+          </h3>
+        </div>
+        <!-- comentario & -->
+        <div class="comentsUser_card">
+          <!-- text -->
+          <p>
+            “Não sou designer, mas deu para perceber que o trabalho ficou bem profissional. Talvez eu mudaria só algumas cores para se ajustarem melhor à minha marca, mas fora isso está perfeito!”
+          </p>
+          <!-- name -->
+          <h3>
+            Pedro Almeida
+            <i class="bi bi-person"></i>
+          </h3>
+        </div>
+        <!-- comentario & -->
+        <div class="comentsUser_card">
+          <!-- text -->
+          <p>
+            “Excelente! O que mais me chamou atenção foi a clareza das seções e a organização. A ideia de mostrar os parceiros em movimento ficou top demais. Parabéns pela criatividade!”
+          </p>
+          <!-- name -->
+          <h3>
+            Luana Ferreira
+            <i class="bi bi-person"></i>
+          </h3>
+        </div>
+      </div>
     </div>
-    <!-- precing -->
+    <!-- pricing -->
+    <div class="pricing">
+      <!-- change pricing -->
+      <div class="pricing-Btn">
+        <button onclick="changeValue(1)">Anual</button>
+        <button onclick="changeValue(-1)">Mensal</button>
+        <div></div>
+      </div>
+      <!-- pricing cards -->
+      <div class="pricing-area">
+        <!-- Plano Free -->
+        <div class="plan">
+          <h3>Free</h3>
+          <p class="pricing-value"><strong>R$0</strong> /mês</p>
+          <p class="pricing-text">Perfeito para indivíduos começando sua jornada.</p>
+          <button>Começar</button>
+          <h4>Comece hoje:</h4>
+          <ul>
+            <li><i class="bi bi-check-lg"></i> Sugestões de código em tempo real</li>
+            <li><i class="bi bi-check-lg"></i> Logos de integração básica</li>
+            <li><i class="bi bi-check-lg"></i> Conexão única com servidor MCP</li>
+            <li><i class="bi bi-check-lg"></i> Até 2 agentes de código IA</li>
+            <li><i class="bi bi-check-lg"></i> Deploys na Vercel com branding Pointer</li>
+          </ul>
+        </div>
+        <!-- Plano Pro -->
+        <div class="plan popular">
+          <h3>Pro <span>Popular</span></h3>
+          <p class="pricing-value"><strong>R$16</strong> /mês</p>
+          <p class="pricing-text">Ideal para profissionais.</p>
+          <button>Assinar agora</button>
+          <h4>Tudo no Free +</h4>
+          <ul>
+            <li><i class="bi bi-check-lg"></i> Previews em tempo real aprimorados</li>
+            <li><i class="bi bi-check-lg"></i> Integrações ilimitadas com logos personalizados</li>
+            <li><i class="bi bi-check-lg"></i> Múltiplas conexões com servidor MCP</li>
+            <li><i class="bi bi-check-lg"></i> Até 10 agentes de código IA simultâneos</li>
+            <li><i class="bi bi-check-lg"></i> Colaboração com chat em equipe</li>
+            <li><i class="bi bi-check-lg"></i> Integrações avançadas com controle de versão</li>
+            <li><i class="bi bi-check-lg"></i> Suporte prioritário por e-mail e chat</li>
+          </ul>
+        </div>
+        <!-- Plano Ultra -->
+        <div class="plan">
+          <h3>Ultra</h3>
+          <p class="pricing-value"><strong>R$160</strong> /mês</p>
+          <p class="pricing-text">Soluções personalizadas para equipes.</p>
+          <button>Falar com Vendas</button>
+          <h4>Tudo no Free +</h4>
+          <ul>
+            <li><i class="bi bi-check-lg"></i> Suporte dedicado de conta</li>
+            <li><i class="bi bi-check-lg"></i> Clusters ilimitados de servidor MCP</li>
+            <li><i class="bi bi-check-lg"></i> Agentes de código IA ilimitados</li>
+            <li><i class="bi bi-check-lg"></i> Segurança e conformidade em nível empresarial</li>
+            <li><i class="bi bi-check-lg"></i> Deploys prioritários e garantias de SLA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Frequently Asked Questions -->
     <div>
 
     </div>
@@ -183,6 +316,7 @@
   <script src="javascript/caroussel.js"></script>
   <script src="javascript/navbar.js"></script>
   <script src="javascript/utilies.js"></script>
-  <script src="javascript/view_Element.js"></script>
+  <script src="javascript/view_Element-tec.js"></script>
+  <script src="javascript/view_Element-coments.js"></script>
 </body>
 </html>

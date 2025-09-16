@@ -58,11 +58,16 @@ body {
 
 
 /* texts */
-h1 {
+h1, h2 {
   font-weight: 700;
   font-size: 1.6em;
   margin: .6em 0em;
 }
+
+h3 {
+  font-weight: 700;
+}
+
 
 p {
   line-height: 1.1em;

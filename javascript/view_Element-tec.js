@@ -1,8 +1,8 @@
 // colect the elements
-const elements = document.querySelectorAll('.R-align, .L-align')
+const elementsTec = document.querySelectorAll('.R-align, .L-align')
 
 // functions
-const observer = new IntersectionObserver((entries) => {
+const observerTec = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       if (entry.target.classList.contains('R-align')) {
@@ -15,4 +15,4 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.9 })
 
 // observere for elements
-elements.forEach(el => observer.observe(el))
+elementsTec.forEach(el => observerTec.observe(el))
