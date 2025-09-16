@@ -38,7 +38,7 @@ function mostrarImagem(n) {
     setTimeout(() => {
       el.classList.remove("animatio-exiteX")
       el.classList.add("screen-disable")
-    }, 500)
+    }, 300)
   }}
   // change the classes
   setTimeout(() => {
@@ -51,7 +51,7 @@ function mostrarImagem(n) {
         // return the manual click
         setTimeout(() => { inAnimation = false }, 1000)
       }})
-  }, 500)
+  }, 300)
 }
 
 

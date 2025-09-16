@@ -13,7 +13,6 @@
 
 /* index page */
 main {
-  height: 100vh;
   width: 100%;
   margin: 1em 0em;
 }
@@ -67,13 +66,11 @@ main {
   max-width: 100%;
 }
 
+/* classes for js carroussel */
 .screen-disable { display: none; }
-.animatio-entraceX { animation: entraceX .5s ease-in forwards; }
-.animatio-exiteX { animation: exiteX .5s ease-in forwards; }
-
-
-
-
+.animatio-entraceX { animation: entraceX .3s ease-in forwards; }
+.animatio-exiteX { animation: exiteX .3s ease-in forwards; }
+/* carroussel - animations */
 @keyframes entraceX {
   from {
     opacity: 0;
@@ -90,3 +87,130 @@ main {
     transform: translateX(-100%);
   }
 }
+
+
+/* welcome text */
+.welcometext {
+  padding: 2em;
+  text-indent: 1em;
+}
+
+.welcometext > P:last-child {
+  margin: .6em 0em;
+}
+
+
+
+/* tecnologis area */
+.card_tec {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+  margin: 3em 0em;
+  padding: 1em;
+  opacity: 0;
+}
+
+.card_title > img {
+  height: 2.4em;
+}
+
+.card_main {
+  width: 70%;
+}
+
+.card_main > p > strong {
+  font-weight: 700;
+}
+
+.card_footer > a {
+  color: var(--colorBlack);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all ease .3s;
+}
+
+.card_footer > a:hover {
+  color: var(--color1);
+}
+
+.R-align {
+  align-items: flex-end;
+  color: var(--colorWhite);
+  background-color: var(--color5);
+  box-shadow: 0 0 .8em var(--color5);
+}
+
+.R-align > div.card_footer > a {
+  color: var(--colorWhite);
+}
+
+.R-align > .card_main {
+  text-align: right;
+}
+
+.L-align {
+  background-color: var(--color4);
+  box-shadow: 0 0 .8em var(--color4);
+}
+
+.show_tec-cards-R {
+  animation: tecCardsViewR .3s ease forwards;
+}
+
+.show_tec-cards-L {
+  animation: tecCardsViewL .3s ease forwards;
+}
+
+@keyframes tecCardsViewR {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes tecCardsViewL {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* partener */
+.partener {
+  text-align: center;
+}
+
+.partener-circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  transform-style: preserve-3d;
+  animation: spin 20s linear infinite; /* rotação */
+}
+
+.partener-circle i {
+  position: absolute;
+  font-size: 3.2em;
+}
+
+/* Distribui os ícones em volta do círculo */
+.partener-circle i:nth-child(1) { transform: rotateY(  0deg) translateZ(120px); }
+.partener-circle i:nth-child(2) { transform: rotateY( 60deg) translateZ(120px); }
+.partener-circle i:nth-child(3) { transform: rotateY(120deg) translateZ(120px); }
+.partener-circle i:nth-child(4) { transform: rotateY(180deg) translateZ(120px); }
+.partener-circle i:nth-child(5) { transform: rotateY(240deg) translateZ(120px); }
+.partener-circle i:nth-child(6) { transform: rotateY(300deg) translateZ(120px); }
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(359deg); }
+}
+

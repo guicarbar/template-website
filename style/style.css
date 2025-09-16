@@ -43,6 +43,7 @@
 
 
 /* general adjustes */
+/* all */
 * {
   box-sizing: border-box;
   /* font for all elements */
@@ -53,4 +54,16 @@
 
 body {
   background-color: var(--color3);
+}
+
+
+/* texts */
+h1 {
+  font-weight: 700;
+  font-size: 1.6em;
+  margin: .6em 0em;
+}
+
+p {
+  line-height: 1.1em;
 }
