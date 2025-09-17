@@ -274,7 +274,6 @@ main {
 .comentsUser_card > h3 > i {
   font-size: 1.3em;
   padding: .1em;
-  border: 2px solid var(--colorBlack);
   border-radius: 50%;
 }
 
@@ -379,27 +378,92 @@ main {
 
 .pricing-Btn {
   position: relative;
-  background-color: var(--color1);
-  padding: .6em;
-  border-radius: 1em;
-}
-
-.pricing-Btn > button {
-  position: relative;
+  background-color: var(--color4);
+  padding: 1em 0em;
   border: none;
-  background-color: transparent;
+  border-radius: 1.6em;
   font-weight: 700;
-  font-size: 1.2em;
-  z-index: 1;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
+  width: 50%;
 }
 
-.pricing-Btn > div {
+.pricing-Btn > span {
+  z-index: 2;
+  width: 50%;
+  text-align: center;
+}
+
+/* adjusts in indicator */
+.pricing-Btn > .indicator {
   position: absolute;
-  top: 10%;
-  left: 5%;
-  width: 43%;
-  height: 80%;
-  border-radius: 1em;
+  top: 4px;
+  bottom: 4px;
+  width: 50%;
   background-color: var(--color3);
+  border-radius: 1.6em;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+}
+
+/* class for js work */ 
+.yearBtn { left: 4px; }
+.mouthBtn { left: calc(50% - 4px); }
+
+
+
+/* Frequently Asked Questions */
+.quests {
+  min-height: 80vh;
+  width: 90%;
+  margin: 3em auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 1.2em;
+}
+
+.quest-box {
+  padding: 1.6em .8em;
+  border: 2px solid var(--color4);
+  border-radius: 1.6em;
+  box-shadow: 0px 0px 1em var(--color4);
+  background-color: var(--color4);
+}
+
+.quest-box > div {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quest-box > div >  h3 {
+  font-size: 1.1em;
+  margin: 0em 0em 0em 1em;
+}
+
+.quest-box > p {
+  overflow: hidden;
+  margin: 0em 3em 0em 3em;
+  max-height: 0;
+  padding: 0;
+  transition: max-height .3s ease, padding .3s ease;
+}
+
+.quest-box.activeQuest > p {
+  display: inline-block;
+  max-height: 300px;
+  padding: 1em 0em;
+}
+
+.quest-box > div > i {
+  transition: transform 0.3s;
+}
+
+.quest-box.activeQuest > div > i {
+  transform: rotate(180deg);
 }
