@@ -8,7 +8,7 @@
   <!-- css components -->
   <link rel="shortcut icon" href="style/img/TemplateIcon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/index-main.css">
+  <link rel="stylesheet" href="style/main-Mobile.css">
 
   <!-- title -->
   <title>Template Website</title>
@@ -216,11 +216,11 @@
     <!-- pricing -->
     <div class="pricing">
       <!-- change pricing -->
-      <div class="pricing-Btn">
-        <button onclick="changeValue(1)">Anual</button>
-        <button onclick="changeValue(-1)">Mensal</button>
-        <div></div>
-      </div>
+      <button class="pricing-Btn" onclick="changeValue()">
+        <div id="indicator" class="indicator yearBtn"></div>
+        <span>Anual</span>
+        <span>Mensal</span>
+      </button>
       <!-- pricing cards -->
       <div class="pricing-area">
         <!-- Plano Free -->
@@ -241,7 +241,7 @@
         <!-- Plano Pro -->
         <div class="plan popular">
           <h3>Pro <span>Popular</span></h3>
-          <p class="pricing-value"><strong>R$16</strong> /mês</p>
+          <p class="pricing-value"><strong id="popularValue">R$16</strong> /mês</p>
           <p class="pricing-text">Ideal para profissionais.</p>
           <button>Assinar agora</button>
           <h4>Tudo no Free +</h4>
@@ -258,7 +258,7 @@
         <!-- Plano Ultra -->
         <div class="plan">
           <h3>Ultra</h3>
-          <p class="pricing-value"><strong>R$160</strong> /mês</p>
+          <p class="pricing-value"><strong id="ultraValue">R$160</strong> /mês</p>
           <p class="pricing-text">Soluções personalizadas para equipes.</p>
           <button>Falar com Vendas</button>
           <h4>Tudo no Free +</h4>
@@ -273,12 +273,85 @@
       </div>
     </div>
     <!-- Frequently Asked Questions -->
-    <div>
-
+    <div class="quests">
+      <!-- quest -->
+      <div class="quest-box" onclick="toggleAnswer(this)">
+        <div>
+          <h3>Posso personalizar os templates do site?</h3>
+          <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <p>
+          Sim! Todos os nossos templates são totalmente personalizáveis. Você pode alterar cores, fontes, imagens e até a disposição dos elementos para se adequar à identidade do seu projeto.
+        </p>
+      </div>
+      <!-- quest -->
+      <div class="quest-box" onclick="toggleAnswer(this)">
+        <div>
+          <h3>Os templates funcionam em dispositivos móveis?</h3>
+          <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <p>
+          Sim! Todos os nossos templates são responsivos e adaptáveis a qualquer tamanho de tela, garantindo que seu site fique perfeito em smartphones, tablets e desktops.
+        </p>
+      </div>
+      <!-- quest -->
+      <div class="quest-box" onclick="toggleAnswer(this)">
+        <div>
+          <h3>É necessário ter conhecimento em programação para usar os templates?</h3>
+          <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <p>
+          Não. Embora alguns ajustes possam exigir conhecimento em HTML ou CSS, todos os templates vêm com instruções detalhadas para facilitar a personalização mesmo para iniciantes.
+        </p>
+      </div>
+      <!-- quest -->
+      <div class="quest-box" onclick="toggleAnswer(this)">
+        <div>
+          <h3>Posso usar os templates para projetos comerciais?</h3>
+          <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <p>
+          Sim! Os templates podem ser usados em projetos pessoais ou comerciais sem restrições, desde que respeite os termos de licença fornecidos no download.
+        </p>
+      </div>
+      <!-- quest -->
+      <div class="quest-box" onclick="toggleAnswer(this)">
+        <div>
+          <h3>Os templates recebem atualizações?</h3>
+          <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <p>
+          Sim. Periodicamente, lançamos atualizações para corrigir bugs, melhorar o desempenho e incluir novos recursos nos templates.
+        </p>
+      </div>
+      <!-- quest -->
+      <div class="quest-box" onclick="toggleAnswer(this)">
+        <div>
+          <h3>Existe suporte caso eu tenha dúvidas?</h3>
+          <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <p>
+          Sim! Oferecemos suporte via e-mail e chat para ajudar com qualquer dificuldade relacionada ao uso ou personalização dos templates.
+        </p>
+      </div>
+      <!-- quest -->
+      <div class="quest-box" onclick="toggleAnswer(this)">
+        <div>
+          <h3>Posso combinar elementos de diferentes templates?</h3>
+          <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <p>
+          Sim! Você pode misturar seções e elementos de diferentes templates para criar um site único, garantindo flexibilidade total no design.
+        </p>
+      </div>
     </div>
     <!-- sing up free -->
-    <div>
-
+    <div class="singUp">
+      <h1>Códigos feitos sem esforço</h1>
+      <p>
+        Templates facilitam o desenvolvimento e padronizam sites, tornando a navegação mais fácil e intuitiva para o usuário.
+      </p>
+      <button>Cadastre-se grátis</button>
     </div>
   </main>
   <!-- footer -->
@@ -318,5 +391,7 @@
   <script src="javascript/utilies.js"></script>
   <script src="javascript/view_Element-tec.js"></script>
   <script src="javascript/view_Element-coments.js"></script>
+  <script src="javascript/value.js"></script>
+  <script src="javascript/quest.js"></script>
 </body>
 </html>
