@@ -5,12 +5,6 @@ footer {
 }
 
 
-/* footer details css */
-.footer-details {
-
-}
-/* general css */
-
 
 /* infos */ 
 .footer-details_infos {
@@ -62,4 +56,56 @@ footer {
 .footer-directs > a {
   color: var(--colorBlack);
   text-decoration: none;
+}
+
+
+
+/* media querries */
+/* Tablets e maiores */
+@media (min-width: 768px) {
+  .footer-details {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-details > div {
+    width: 30%;
+  }
+
+  .footer-details_links {
+    align-items: center;
+  }
+
+  .footer-details_links > p {
+    display: none;
+  }
+
+  .footer-details_links > a {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .footer-details_contacts > p {
+    display: none;
+  }
+
+  .footer-details_contacts > a {
+    width: 100%;
+  }
+}
+
+
+
+/* Notebooks */
+@media (min-width: 1024px) {
+
+}
+
+
+
+/* Desktops grandes */
+@media (min-width: 1440px) {
+
 }

@@ -1,16 +1,4 @@
-/* root - vars */
-:root {
-  /* colors */
-  --color1: #caff42;
-  --color2: #ebf7f8;
-  --color3: #d0e0eb;
-  --color4: #88abc2;
-  --color5: #49708a;
-  --colorBlack: #00030c;
-  --colorWhite: #ffffff;
-}
-
-
+/* media querries */
 /* Tablets e maiores */
 @media (min-width: 768px) {
   /* welcome text */
@@ -166,10 +154,6 @@
 
 
   /* pricing area */
-  .pricing-area {
-
-  }
-
   .plan {
     width: 25%;
   }
