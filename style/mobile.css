@@ -22,6 +22,8 @@ main {
 /* general itens */
 .carrousel {
   position: relative;
+  max-width: 769px;
+  margin: auto;
 }
 
 /* btn for carroussel */
@@ -94,6 +96,8 @@ main {
 .welcometext {
   padding: 2em;
   text-indent: 1em;
+  max-width: 769px;
+  margin: auto;
 }
 
 .welcometext > P:last-child {

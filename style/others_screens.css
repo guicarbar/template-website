@@ -1,0 +1,176 @@
+/* root - vars */
+:root {
+  /* colors */
+  --color1: #caff42;
+  --color2: #ebf7f8;
+  --color3: #d0e0eb;
+  --color4: #88abc2;
+  --color5: #49708a;
+  --colorBlack: #00030c;
+  --colorWhite: #ffffff;
+}
+
+
+/* Tablets e maiores */
+@media (min-width: 768px) {
+  /* welcome text */
+  .welcometext {
+    margin: 6em auto;
+  }
+
+
+
+  /* tecnologis area */
+  .card_tec {
+    padding: 1.6em  3.2em;
+    min-height: 30vh;
+    justify-content: center;
+  }
+
+
+
+  /* partener area */
+  .partener {
+    min-height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.4em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partener-circle {
+    max-width: 65%;
+  }
+
+  .icons {
+    gap: 3.6em;
+  }
+
+  .icons > i {
+    font-size: 3.8em;
+  }
+
+
+
+  /* coments for user area */
+  .comentsUser_carBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .comentsUser_card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  .comentsUser_card:nth-child(1) {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: var(--color1);
+    box-shadow: 0 0 1em var(--color1);
+  }
+
+  .comentsUser_card:nth-child(4) {
+    background-color: var(--color4);
+    box-shadow: 0 0 1em var(--color4);
+  }
+
+  .comentsUser_card:nth-child(5) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .comentsUser_card:nth-child(7) {
+    grid-column: span 1;
+    grid-row: span 2;
+    margin-bottom: 1.6em;
+  }
+
+
+
+  /* pricing area */
+  .pricing {
+    margin-top: 15vh;
+  }
+
+  .pricing-Btn {
+    width: 240px;
+  }
+
+  .pricing-area {
+    width: 70%;
+  }
+
+
+
+  /* Frequently Asked Questions */
+  .quests {
+    margin-top: 8em;
+  }
+
+  .quests > div {
+    width: 70%;
+    margin: auto;
+  }
+
+
+
+  /* singUp sectio */
+  .singUp {
+    height: 80vh;
+    justify-content: center;
+  }
+}
+
+
+
+/* Notebooks */
+@media (min-width: 1024px) {
+  /* partener area */
+  .partener {
+    height: 60vh;
+  }
+
+
+
+  /* coments for user area */
+  .comentsUser_carBox {
+    width: 960px;
+    margin: auto;
+  }
+
+
+
+  /* pricing area */
+  .pricing-area {
+    width: 100%;
+  }
+
+  .plan {
+    width: 30%;
+    margin: 0;
+  }
+}
+
+
+
+/* Desktops grandes */
+@media (min-width: 1440px) {
+  /* partener area */
+  .partener-circle {
+    max-width: 45%;
+  }
+
+
+
+  /* pricing area */
+  .pricing-area {
+
+  }
+
+  .plan {
+    width: 25%;
+  }
+}
