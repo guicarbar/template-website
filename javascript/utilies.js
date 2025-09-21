@@ -8,8 +8,9 @@ document.addEventListener("resize", () => {
 
 // navbar media querrie
 window.addEventListener("resize", () => {
-  
+  setTimeout(location.reload(), 300)
 })
+
 
 // navbar media querrie (initial load)
 if (window.innerWidth >= 768) {
